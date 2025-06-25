@@ -1,9 +1,12 @@
 import React from 'react'
+import Hero from '../components/Contact/Hero'
+import Section2 from '../components/Contact/Section2'
 
 const Contact = () => {
   return (
     <div>
-      <img src="/images/contact.jpg" alt="" />
+      <Hero/>
+      <Section2 />
     </div>
   )
 }
