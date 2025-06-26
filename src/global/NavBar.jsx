@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   const links = [
-    { name: '', href: '/' },
+   
     { name: 'About Me', href: '/about' },
     { name: 'Visions', href: '/visions' },
     { name: 'My Projects', href: '/work' },
@@ -26,7 +26,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const closeMenuOnResize = () => {
-      if (window.innerWidth >= 1024) {
+      if (window.innerWidth >= 768) {
         setIsOpen(false);
       }
     };
@@ -36,7 +36,7 @@ const Navbar = () => {
     };
   }, []);
 
-  // ✅ Unified logic: text-white icon for /contact and /visions
+  
   const whiteTextPaths = ['/contact', '/visions'];
   const menuIconColor = whiteTextPaths.includes(location.pathname)
     ? 'text-white'
@@ -76,7 +76,7 @@ const Navbar = () => {
         <div className="flex md:hidden">
           <button onClick={handleToggle}>
             {isOpen ? (
-              <X className={menuIconColor} />
+              <X />
             ) : (
               <Menu className={menuIconColor} />
             )}
@@ -87,13 +87,13 @@ const Navbar = () => {
       {/* Mobile Navigation Panel */}
       {isOpen && (
         <nav className="flex flex-col justify-between items-center p-5 w-1/2 h-screen bg-black text-white fixed top-0 right-0 z-40 shadow-md">
-          <div className="flex flex-col gap-5 w-full">
+          <div className="flex flex-col gap-5 w-full mt-8">
             {links.map((link) => (
               <NavLink
                 key={link.name}
                 to={link.href}
                 className={({ isActive }) =>
-                  `hover:bg-gray-200 hover:text-black rounded-lg p-2 w-full text-center ${
+                  `hover:bg-gray-200 hover:text-black rounded-lg p-2 w-full text-center  ${
                     isActive ? 'bg-white text-black' : ''
                   }`
                 }

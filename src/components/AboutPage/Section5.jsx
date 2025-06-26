@@ -26,7 +26,7 @@ const Section5 = () => {
     ]
 
     return (
-        <div className='p-10 md:p-20 bg-gray-100'>
+        <div className='p-10 md:p-20 bg-gray-100 mt-20'>
             <div className='mb-10 text-center'>
                 <h1 className="text-3xl md:text-4xl font-bold text-gray-800">What our customers are saying?</h1>
             </div>

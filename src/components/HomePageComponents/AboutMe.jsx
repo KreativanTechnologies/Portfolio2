@@ -21,7 +21,7 @@ const AboutMe = () => {
     ]
   return (
    <>
-    <div className='bg-[#1D1D1D] text-white p-10'>
+    <div className='bg-[#1D1D1D] text-white p-10 '>
       <h1 className='uppercase text-xl font-semibold mb-5'>About Me</h1>
       <p>At Rahul Mehta Realty, we specialize in premium residential and commercial properties. With over 5 years of experience in helping families and investors find the perfect home or business space, our approach is personalized, honest, and rooted in local market expertise. Whether you're buying, selling, or leasing—we’re here to guide you through every step.
 Let’s find your dream space together.</p>

@@ -2,7 +2,7 @@ import { Facebook, Twitter, Instagram } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-black text-white mt-20">
       {/* Hero Section */}
       <div className="px-6 py-12 md:px-12 lg:px-16">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
